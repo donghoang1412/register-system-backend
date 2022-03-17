@@ -148,6 +148,11 @@ public class UserController {
 		return ResponseEntity.ok(persistUser);
 	}
 	
+	@GetMapping(value ="/test")
+	public ResponseEntity<?> test() {
+		return null;
+	}
+	
 	/*
 	@GetMapping(value="/getStudentList")
 	public ResponseEntity<?> getStudentList(@RequestParam(value="courseId") int courseId) {
